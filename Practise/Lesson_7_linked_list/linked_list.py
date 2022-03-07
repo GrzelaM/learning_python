@@ -10,6 +10,9 @@ class LinkedList:
         self.head = head
         self.size_of_list = 0
 
+    def get_list_size(self):
+        return print(f"Rozmiar listy wynosi: {self.size_of_list}")
+
     def add_value(self, x_value):
         newNode = Node(x_value)
 
@@ -60,8 +63,10 @@ l.add_value(3)
 l.add_value(4)
 l.add_value(5)
 l.print_list()
+l.get_list_size()
 print("X"*100)
 l.print_n_elements(3)
 print("X"*100)
 l.delete_n_elements(2)
 l.print_list()
+l.get_list_size()
